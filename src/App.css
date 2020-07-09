@@ -1,50 +1,54 @@
-/*.App {*/
-/*  text-align: center;*/
-/*}*/
-
-/*.App-logo {*/
-/*  height: 40vmin;*/
-/*  pointer-events: none;*/
-/*}*/
-
-/*@media (prefers-reduced-motion: no-preference) {*/
-/*  .App-logo {*/
-/*    animation: App-logo-spin infinite 20s linear;*/
-/*  }*/
-/*}*/
-
-/*.App-header {*/
-/*  background-color: #282c34;*/
-/*  min-height: 100vh;*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  font-size: calc(10px + 2vmin);*/
-/*  color: white;*/
-/*}*/
-
-/*.App-link {*/
-/*  color: #61dafb;*/
-/*}*/
-
-/*@keyframes App-logo-spin {*/
-/*  from {*/
-/*    transform: rotate(0deg);*/
-/*  }*/
-/*  to {*/
-/*    transform: rotate(360deg);*/
-/*  }*/
-/*}*/
-
 body {
-  background-color: lightblue;
+  background-color: #72ace624;
+  font-family: Arial;
+  line-height: 22px;
 }
 
 .post {
-  background-color: azure;
+  background-color: #fff;
 }
 
 .ul-bg {
-  background-color: azure;
+  background-color: #fff;
+  padding: 20px;
+  list-style-type: none;
+  margin-bottom: 3px;
+}
+
+.posts-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.posts-row {
+  width: 100%;
+}
+
+.post-title {
+  color: blue;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.post-author {
+  color: grey;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.post-author_tel {
+  padding-top: 0px;
+}
+
+.search-form-row {
+  display: flex;
+  justify-content: center;
+}
+
+.search-form-input {
+  width: 40%;
+}
+
+.container-fluid {
+  padding-top: 20px;
 }

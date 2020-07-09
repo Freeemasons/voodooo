@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import { Row, Col, Grid } from "react-flexbox-grid";
 import Post from "./Post";
 
 // export default ({posts}) => {
@@ -14,72 +15,54 @@ class PostsSynchron extends Component {
   constructor(props) {
     super(props);
 
-    this.handleSearch = this.handleSearch.bind(this)
   }
 
-  state = {
-    currencies: [
-      {
-        id: 1,
-        name: 'Darth Vader',
-        phoneNumber: '+250966666666',
-
-      }, {
-        id: 2,
-        name: 'Princess Leia',
-        phoneNumber: '+250966344466',
-
-      }, {
-        id: 3,
-        name: 'Luke Skywalker',
-        phoneNumber: '+250976654433',
-
-      }, {
-        id: 4,
-        name: 'Chewbacca',
-        phoneNumber: '+250456784935',
-      }
-    ]
-  }
-
-
-  handleSearch(event) {
-    let searchQuery = event.target.value.toLowerCase();
-    let currencies = this.state.currencies.filter(function (el) {
-      let searchValue = el.name.toLowerCase();
-      return searchValue.indexOf(searchQuery) !== -1;
-    });
-
-    this.setState({
-      currencies: currencies
-    });
-  }
 
 
   render(){
 
 
-    const postShow = this.state.currencies.map(el=> {
+    const postShow = this.props.currencies.map(el=> {
       return (
-        <div key={el.id}>
-          <ul className="ul-bg">
-            <li  >
-              {el.phoneNumber}
-            </li>
-            <li >
-              {el.name}
-            </li>
-          </ul>
-        </div>
+        <Col lg={4}>
+          <div key={el.id}>
+            <ul className="ul-bg">
+              <li  className="post-title">
+                {el.title}
+              </li>
+              <li  >
+                {el.text}
+              </li>
+
+              <li className="post-author">
+                {el.name}
+              </li>
+              <li  className="post-author post-author_tel">
+                {el.phoneNumber}
+              </li>
+            </ul>
+          </div>
+        </Col>
+
       );
     })
 
     return (
       <div>
-        <input type="text" placeholder="Search..."  onChange={this.handleSearch} />
-        {postShow}
-      </div>
+        <Grid fluid>
 
+          <Row>
+            <Col lg={12}>
+              <div className="posts-container">
+                <Row className="posts-row">
+                  {postShow}
+                </Row>
+
+              </div>
+            </Col>
+          </Row>
+        </Grid>
+      </div>
     )
   }
 

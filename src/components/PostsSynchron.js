@@ -1,15 +1,8 @@
 import React, {Component} from "react";
 import { Row, Col, Grid } from "react-flexbox-grid";
-import Post from "./Post";
+import {connect} from 'react-redux';
 
-// export default ({posts}) => {
-//   if (!posts.length) {
-//     return <button>постов нет</button>
-//   }
-//   return (
-//     posts.map(post => < Post post={post} key={post}/>)
-//   )
-// }
+import {showPost} from "../redux/actions";
 
 class PostsSynchron extends Component {
   constructor(props) {
@@ -17,47 +10,45 @@ class PostsSynchron extends Component {
 
   }
 
+  componentDidMount() {
+    const { dispatch, showPost } = this.props;
+    debugger;
+    showPost();
+  }
 
 
   render(){
 
-
-    const postShow = this.props.currencies.map(el=> {
+    debugger;
+    const postShow = this.props.posts.map(el=> {
       return (
-        <Col lg={4}>
+        <Col lg={4} >
           <div key={el.id}>
             <ul className="ul-bg">
               <li  className="post-title">
                 {el.title}
               </li>
               <li  >
-                {el.text}
+                {el.body}
               </li>
-
               <li className="post-author">
                 {el.name}
-              </li>
-              <li  className="post-author post-author_tel">
-                {el.phoneNumber}
               </li>
             </ul>
           </div>
         </Col>
-
       );
     })
 
     return (
       <div>
         <Grid fluid>
-
           <Row>
             <Col lg={12}>
               <div className="posts-container">
                 <Row className="posts-row">
                   {postShow}
                 </Row>
-
               </div>
             </Col>
           </Row>
@@ -66,7 +57,18 @@ class PostsSynchron extends Component {
     )
   }
 
-
 }
 
-export default PostsSynchron;
+const mapStateToProps = state => {
+  return {
+    posts: state.posts,
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    showPost: () => (dispatch(showPost())),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PostsSynchron);

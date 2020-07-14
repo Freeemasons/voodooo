@@ -5,27 +5,23 @@ import { Row, Col, Grid } from "react-flexbox-grid";
 class PostsSynchron extends Component {
   constructor(props) {
     super(props);
-
   }
 
 
-
   render(){
-
-
     const postShow = this.props.posts.map(el => {
       const postAuthor = this.props.authors.find(author => author.id === el.userId);
       return (
         <Col lg={4} key={el.id} >
           <div>
-            <ul className="ul-bg">
-              <li  className="post-title">
+            <ul className="article__item">
+              <li  className="article__item-title">
                 {el.title}
               </li>
               <li  >
                 {el.body}
               </li>
-              <li className="post-author" >
+              <li className="article__item-author" >
                 <div>
                   {postAuthor.name}
                 </div>
@@ -37,14 +33,13 @@ class PostsSynchron extends Component {
     })
 
 
-
     return (
       <div>
-        <Grid fluid>
+        <Grid fluid className="article">
           <Row>
             <Col lg={12}>
-              <div className="posts-container">
-                <Row className="posts-row">
+              <div className="article__container">
+                <Row className="article__row">
                     {postShow}
                 </Row>
               </div>
@@ -54,9 +49,7 @@ class PostsSynchron extends Component {
       </div>
     )
   }
-
 }
-
 
 
 export default PostsSynchron;

@@ -9,10 +9,10 @@ export default class SearchForm extends React.Component {
   render() {
     return (
       <div>
-        <Grid fluid>
+        <Grid fluid className="search-form">
           <Row>
-            <Col lg={12} className="search-form-row">
-              <input type="text" placeholder="Search..."  onChange={this.props.handleSearch} className="search-form-input"/>
+            <Col lg={12} className="search-form__row">
+              <input type="text" placeholder="Search..."  onChange={this.props.handleSearch} className="search-form__input"/>
             </Col>
           </Row>
         </Grid>

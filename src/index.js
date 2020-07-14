@@ -31,7 +31,6 @@ const app = (
 )
 
 
-
 render(app, document.getElementById('root'));
 
 serviceWorker.unregister();

@@ -1,14 +1,11 @@
 import React, {Component} from 'react';
+
 import './App.css';
-
 import SearchForm from "./components/SearchForm";
-
 import { Row, Col, Grid } from "react-flexbox-grid";
 import PostsSynchron from "./components/PostsSynchron";
 import {connect} from "react-redux";
 import {showAuthors, showPost} from "./redux/actions";
-
-
 
 
 class App extends Component {
@@ -36,7 +33,6 @@ class App extends Component {
       return false;
     })
 
-debugger
 
     this.setState({
       posts: matchedPosts
@@ -46,7 +42,6 @@ debugger
 
   componentDidMount() {
     const { showPost, showAuthors } = this.props;
-    console.log('lolo')
     showPost();
     showAuthors();
   }
@@ -69,13 +64,11 @@ debugger
               <SearchForm handleSearch={this.handleSearch}/>
             </Col>
           </Row>
-
           <Row>
             <Col lg={12}>
               <PostsSynchron posts={this.state.posts}  authors={this.state.authors}/>
             </Col>
           </Row>
-
         </Grid>
       </div>
     );

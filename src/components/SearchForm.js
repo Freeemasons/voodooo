@@ -2,9 +2,7 @@ import React from "react";
 import {Col, Grid, Row} from "react-flexbox-grid";
 
 export default class SearchForm extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+
 
   render() {
     return (

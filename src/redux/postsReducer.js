@@ -1,4 +1,4 @@
-import {SHOW_POSTS_SUCCESS, SHOW_AUTHORS_SUCCESS} from "./types";
+import {SHOW_POSTS_SUCCESS} from "./types";
 
 const initialState = [];
 

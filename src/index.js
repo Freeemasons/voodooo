@@ -9,16 +9,16 @@ import {rootReducer} from "./redux/rootReducer";
 
 import createSagaMiddleware from 'redux-saga'
 import {sagasWatcher} from "./redux/sagas";
+import {composeWithDevTools} from 'redux-devtools-extension/developmentOnly';
 
 
 
 const saga = createSagaMiddleware()
 
-const store = createStore(rootReducer, compose(
+const store = createStore(rootReducer, composeWithDevTools(
   applyMiddleware(
     saga
-  ),
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  )
 ))
 
 saga.run(sagasWatcher)

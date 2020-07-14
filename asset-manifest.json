@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/voodooo/static/css/main.171a488e.chunk.css",
-    "main.js": "/voodooo/static/js/main.d5c5a0d9.chunk.js",
-    "main.js.map": "/voodooo/static/js/main.d5c5a0d9.chunk.js.map",
+    "main.css": "/voodooo/static/css/main.ea1df972.chunk.css",
+    "main.js": "/voodooo/static/js/main.c6d9aedb.chunk.js",
+    "main.js.map": "/voodooo/static/js/main.c6d9aedb.chunk.js.map",
     "runtime-main.js": "/voodooo/static/js/runtime-main.a2f12da2.js",
     "runtime-main.js.map": "/voodooo/static/js/runtime-main.a2f12da2.js.map",
     "static/css/2.56e6ce34.chunk.css": "/voodooo/static/css/2.56e6ce34.chunk.css",
     "static/js/2.03d61486.chunk.js": "/voodooo/static/js/2.03d61486.chunk.js",
     "static/js/2.03d61486.chunk.js.map": "/voodooo/static/js/2.03d61486.chunk.js.map",
     "index.html": "/voodooo/index.html",
-    "precache-manifest.cbf48218211b972a307f937819e849d3.js": "/voodooo/precache-manifest.cbf48218211b972a307f937819e849d3.js",
+    "precache-manifest.7526784634f9488426b4dd255e6f172b.js": "/voodooo/precache-manifest.7526784634f9488426b4dd255e6f172b.js",
     "service-worker.js": "/voodooo/service-worker.js",
     "static/css/2.56e6ce34.chunk.css.map": "/voodooo/static/css/2.56e6ce34.chunk.css.map",
-    "static/css/main.171a488e.chunk.css.map": "/voodooo/static/css/main.171a488e.chunk.css.map",
+    "static/css/main.ea1df972.chunk.css.map": "/voodooo/static/css/main.ea1df972.chunk.css.map",
     "static/js/2.03d61486.chunk.js.LICENSE.txt": "/voodooo/static/js/2.03d61486.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a2f12da2.js",
     "static/css/2.56e6ce34.chunk.css",
     "static/js/2.03d61486.chunk.js",
-    "static/css/main.171a488e.chunk.css",
-    "static/js/main.d5c5a0d9.chunk.js"
+    "static/css/main.ea1df972.chunk.css",
+    "static/js/main.c6d9aedb.chunk.js"
   ]
 }

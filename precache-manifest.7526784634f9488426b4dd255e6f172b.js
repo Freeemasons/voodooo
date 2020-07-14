@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1aef78f5c2223366cc862b409327a1d0",
+    "revision": "1f3179a6c06ba756aeab808b91c4b221",
     "url": "/voodooo/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/voodooo/static/css/2.56e6ce34.chunk.css"
   },
   {
-    "revision": "bd80c766b62d923bf7b1",
-    "url": "/voodooo/static/css/main.171a488e.chunk.css"
+    "revision": "88b936ee03e47408d8eb",
+    "url": "/voodooo/static/css/main.ea1df972.chunk.css"
   },
   {
     "revision": "d7c7432eaa9f1c2d9c97",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/voodooo/static/js/2.03d61486.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bd80c766b62d923bf7b1",
-    "url": "/voodooo/static/js/main.d5c5a0d9.chunk.js"
+    "revision": "88b936ee03e47408d8eb",
+    "url": "/voodooo/static/js/main.c6d9aedb.chunk.js"
   },
   {
     "revision": "b09c55b233ac9dcaf6d1",

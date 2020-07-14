@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/voodooo/static/css/main.ef146826.chunk.css",
-    "main.js": "/voodooo/static/js/main.1300710f.chunk.js",
-    "main.js.map": "/voodooo/static/js/main.1300710f.chunk.js.map",
-    "runtime-main.js": "/voodooo/static/js/runtime-main.99950245.js",
-    "runtime-main.js.map": "/voodooo/static/js/runtime-main.99950245.js.map",
-    "static/css/2.22d6b5ec.chunk.css": "/voodooo/static/css/2.22d6b5ec.chunk.css",
-    "static/js/2.e946d772.chunk.js": "/voodooo/static/js/2.e946d772.chunk.js",
-    "static/js/2.e946d772.chunk.js.map": "/voodooo/static/js/2.e946d772.chunk.js.map",
+    "main.css": "/voodooo/static/css/main.171a488e.chunk.css",
+    "main.js": "/voodooo/static/js/main.d5c5a0d9.chunk.js",
+    "main.js.map": "/voodooo/static/js/main.d5c5a0d9.chunk.js.map",
+    "runtime-main.js": "/voodooo/static/js/runtime-main.a2f12da2.js",
+    "runtime-main.js.map": "/voodooo/static/js/runtime-main.a2f12da2.js.map",
+    "static/css/2.56e6ce34.chunk.css": "/voodooo/static/css/2.56e6ce34.chunk.css",
+    "static/js/2.03d61486.chunk.js": "/voodooo/static/js/2.03d61486.chunk.js",
+    "static/js/2.03d61486.chunk.js.map": "/voodooo/static/js/2.03d61486.chunk.js.map",
     "index.html": "/voodooo/index.html",
-    "precache-manifest.d5fe8fae89e0a1925e2ddcc221d0cac6.js": "/voodooo/precache-manifest.d5fe8fae89e0a1925e2ddcc221d0cac6.js",
+    "precache-manifest.cbf48218211b972a307f937819e849d3.js": "/voodooo/precache-manifest.cbf48218211b972a307f937819e849d3.js",
     "service-worker.js": "/voodooo/service-worker.js",
-    "static/css/2.22d6b5ec.chunk.css.map": "/voodooo/static/css/2.22d6b5ec.chunk.css.map",
-    "static/css/main.ef146826.chunk.css.map": "/voodooo/static/css/main.ef146826.chunk.css.map",
-    "static/js/2.e946d772.chunk.js.LICENSE.txt": "/voodooo/static/js/2.e946d772.chunk.js.LICENSE.txt"
+    "static/css/2.56e6ce34.chunk.css.map": "/voodooo/static/css/2.56e6ce34.chunk.css.map",
+    "static/css/main.171a488e.chunk.css.map": "/voodooo/static/css/main.171a488e.chunk.css.map",
+    "static/js/2.03d61486.chunk.js.LICENSE.txt": "/voodooo/static/js/2.03d61486.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.99950245.js",
-    "static/css/2.22d6b5ec.chunk.css",
-    "static/js/2.e946d772.chunk.js",
-    "static/css/main.ef146826.chunk.css",
-    "static/js/main.1300710f.chunk.js"
+    "static/js/runtime-main.a2f12da2.js",
+    "static/css/2.56e6ce34.chunk.css",
+    "static/js/2.03d61486.chunk.js",
+    "static/css/main.171a488e.chunk.css",
+    "static/js/main.d5c5a0d9.chunk.js"
   ]
 }

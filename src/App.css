@@ -20,8 +20,6 @@ body {
   justify-content: space-between;
 }
 
-
-
 .article__container {
   display: flex;
   justify-content: space-between;
@@ -53,12 +51,10 @@ body {
   padding-top: 0px;
 }
 
-
 .search-form__row {
   display: flex;
   justify-content: center;
 }
-
 
 .search-form__input{
   width: 40%;

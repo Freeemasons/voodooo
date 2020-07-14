@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/voodooo/static/css/main.ef146826.chunk.css",
-    "main.js": "/voodooo/static/js/main.3606395b.chunk.js",
-    "main.js.map": "/voodooo/static/js/main.3606395b.chunk.js.map",
+    "main.js": "/voodooo/static/js/main.1300710f.chunk.js",
+    "main.js.map": "/voodooo/static/js/main.1300710f.chunk.js.map",
     "runtime-main.js": "/voodooo/static/js/runtime-main.99950245.js",
     "runtime-main.js.map": "/voodooo/static/js/runtime-main.99950245.js.map",
     "static/css/2.22d6b5ec.chunk.css": "/voodooo/static/css/2.22d6b5ec.chunk.css",
     "static/js/2.e946d772.chunk.js": "/voodooo/static/js/2.e946d772.chunk.js",
     "static/js/2.e946d772.chunk.js.map": "/voodooo/static/js/2.e946d772.chunk.js.map",
     "index.html": "/voodooo/index.html",
-    "precache-manifest.990d7ebefe9551a16ff2a59ac7ae6b86.js": "/voodooo/precache-manifest.990d7ebefe9551a16ff2a59ac7ae6b86.js",
+    "precache-manifest.d5fe8fae89e0a1925e2ddcc221d0cac6.js": "/voodooo/precache-manifest.d5fe8fae89e0a1925e2ddcc221d0cac6.js",
     "service-worker.js": "/voodooo/service-worker.js",
     "static/css/2.22d6b5ec.chunk.css.map": "/voodooo/static/css/2.22d6b5ec.chunk.css.map",
     "static/css/main.ef146826.chunk.css.map": "/voodooo/static/css/main.ef146826.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.22d6b5ec.chunk.css",
     "static/js/2.e946d772.chunk.js",
     "static/css/main.ef146826.chunk.css",
-    "static/js/main.3606395b.chunk.js"
+    "static/js/main.1300710f.chunk.js"
   ]
 }

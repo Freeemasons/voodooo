@@ -1,8 +1,6 @@
 import React, {Component} from "react";
 import { Row, Col, Grid } from "react-flexbox-grid";
-import {connect} from 'react-redux';
 
-import {showPost} from "../redux/actions";
 
 class PostsSynchron extends Component {
   constructor(props) {
@@ -10,20 +8,16 @@ class PostsSynchron extends Component {
 
   }
 
-  componentDidMount() {
-    const { dispatch, showPost } = this.props;
-    debugger;
-    showPost();
-  }
 
 
   render(){
 
-    debugger;
-    const postShow = this.props.posts.map(el=> {
+
+    const postShow = this.props.posts.map(el => {
+      const postAuthor = this.props.authors.find(author => author.id === el.userId);
       return (
-        <Col lg={4} >
-          <div key={el.id}>
+        <Col lg={4} key={el.id} >
+          <div>
             <ul className="ul-bg">
               <li  className="post-title">
                 {el.title}
@@ -31,14 +25,18 @@ class PostsSynchron extends Component {
               <li  >
                 {el.body}
               </li>
-              <li className="post-author">
-                {el.name}
+              <li className="post-author" >
+                <div>
+                  {postAuthor.name}
+                </div>
               </li>
             </ul>
           </div>
         </Col>
       );
     })
+
+
 
     return (
       <div>
@@ -47,7 +45,7 @@ class PostsSynchron extends Component {
             <Col lg={12}>
               <div className="posts-container">
                 <Row className="posts-row">
-                  {postShow}
+                    {postShow}
                 </Row>
               </div>
             </Col>
@@ -59,16 +57,6 @@ class PostsSynchron extends Component {
 
 }
 
-const mapStateToProps = state => {
-  return {
-    posts: state.posts,
-  }
-}
 
-const mapDispatchToProps = dispatch => {
-  return {
-    showPost: () => (dispatch(showPost())),
-  }
-}
 
-export default connect(mapStateToProps, mapDispatchToProps)(PostsSynchron);
+export default PostsSynchron;

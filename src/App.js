@@ -5,6 +5,9 @@ import SearchForm from "./components/SearchForm";
 
 import { Row, Col, Grid } from "react-flexbox-grid";
 import PostsSynchron from "./components/PostsSynchron";
+import {connect} from "react-redux";
+import {showAuthors, showPost} from "./redux/actions";
+
 
 
 
@@ -12,6 +15,10 @@ class App extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      posts: [],
+      authors: [],
+    }
 
     this.handleSearch = this.handleSearch.bind(this)
   }
@@ -20,14 +27,37 @@ class App extends Component {
 
   handleSearch(event) {
     let searchQuery = event.target.value.toLowerCase();
-    let posts = this.state.posts.filter(function (el) {
-      let searchValue = el.name.toLowerCase();
-      return searchValue.indexOf(searchQuery) !== -1;
-    });
+
+    const matchingAuthors = this.props.authors.filter(author => author.name.toLowerCase().includes(searchQuery)).map(author => author.id);
+
+    const matchedPosts = this.props.posts.filter(post => {
+
+      if (matchingAuthors.includes(post.userId)) return true;
+      return false;
+    })
+
+debugger
 
     this.setState({
-      posts: posts
+      posts: matchedPosts
     });
+  }
+
+
+  componentDidMount() {
+    const { showPost, showAuthors } = this.props;
+    console.log('lolo')
+    showPost();
+    showAuthors();
+  }
+
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (prevProps.authors.length !== this.props.authors.length) {
+      this.setState({ authors: this.props.authors });
+    }
+    if (prevProps.posts.length !== this.props.posts.length) {
+      this.setState({ posts: this.props.posts });
+    }
   }
 
   render() {
@@ -42,7 +72,7 @@ class App extends Component {
 
           <Row>
             <Col lg={12}>
-              <PostsSynchron  />
+              <PostsSynchron posts={this.state.posts}  authors={this.state.authors}/>
             </Col>
           </Row>
 
@@ -52,4 +82,18 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    posts: state.posts,
+    authors: state.authors,
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    showPost: () => (dispatch(showPost())),
+    showAuthors: () => (dispatch(showAuthors())),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

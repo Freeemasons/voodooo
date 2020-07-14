@@ -22,11 +22,11 @@ function* sagaWorkerAuthor() {
 }
 
 async function getPosts() {
-  const response = await fetch('http://jsonplaceholder.typicode.com/posts');
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts');
   return await response.json();
 }
 
 async function getAuthors() {
-  const response = await fetch('http://jsonplaceholder.typicode.com/users');
+  const response = await fetch('https://jsonplaceholder.typicode.com/users');
   return await response.json();
 }
